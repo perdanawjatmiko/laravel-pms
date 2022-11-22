@@ -58,6 +58,7 @@
                         <span class="nav-main-link-name">Dashboard</span>
                     </a>
                 </li>
+                <li class="nav-main-heading">Project</li>
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
                         aria-expanded="true" href="#">
@@ -75,13 +76,15 @@
                                 <span class="nav-main-link-name">Add Project</span>
                             </a>
                         </li>
-                        <li class="nav-main-item">
-                            <a class="nav-main-link nav-main-link" href="{{ url('/categories') }}">
-                                <span class="nav-main-link-name">Categories</span>
-                            </a>
-                        </li>
                     </ul>
                 </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link" href="{{ url('/categories') }}">
+                        <i class="nav-main-link-icon fa fa-box-archive"></i>
+                        <span class="nav-main-link-name">Categories</span>
+                    </a>
+                </li>
+                <li class="nav-main-heading">Tasks</li>
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
                         aria-expanded="true" href="#">
@@ -101,6 +104,7 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-main-heading">Users</li>
                 <li class="nav-main-item">
                     <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
                         aria-expanded="true" href="#">
@@ -116,6 +120,25 @@
                         <li class="nav-main-item">
                             <a class="nav-main-link nav-main-link" href="{{ url('users/create') }}">
                                 <span class="nav-main-link-name">Add User</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-main-item">
+                    <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
+                        aria-expanded="true" href="#">
+                        <i class="nav-main-link-icon fa fa-users"></i>
+                        <span class="nav-main-link-name">Teams</span>
+                    </a>
+                    <ul class="nav-main-submenu">
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link" href="{{ url('teams/') }}">
+                                <span class="nav-main-link-name">All Teams</span>
+                            </a>
+                        </li>
+                        <li class="nav-main-item">
+                            <a class="nav-main-link nav-main-link" href="{{ url('teams/create') }}">
+                                <span class="nav-main-link-name">Assemble Team</span>
                             </a>
                         </li>
                     </ul>
